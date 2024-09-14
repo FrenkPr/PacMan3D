@@ -1,0 +1,89 @@
+{
+    "name": "PlayerInputSystem",
+    "maps": [
+        {
+            "name": "Rotate",
+            "id": "8b445174-f6d1-4a54-ba59-537134e83e28",
+            "actions": [
+                {
+                    "name": "RotationDir",
+                    "type": "Value",
+                    "id": "20c23aac-ef15-4602-a15c-da2ae7705a4b",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "HorizontalDir",
+                    "id": "5065049f-40ba-4803-a38f-d2fc8920dd4d",
+                    "path": "1DAxis(maxValue=180)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotationDir",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "93a17465-622c-411a-a0fe-526ccc7143e4",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotationDir",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "764d7051-4b1a-4ba5-b1bc-5fe8d5c88f4c",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotationDir",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "VerticalDir",
+                    "id": "c788024c-0ab5-4011-8efa-2acc30fabe13",
+                    "path": "1DAxis(minValue=-90,maxValue=90)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotationDir",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "8374f61e-15f0-4803-be67-1893cd5b5d94",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotationDir",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "808485c6-c5f9-4de5-bb2a-b8f68eb36dc5",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotationDir",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
