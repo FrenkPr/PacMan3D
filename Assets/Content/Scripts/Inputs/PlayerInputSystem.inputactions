@@ -83,6 +83,34 @@
                     "isPartOfComposite": true
                 }
             ]
+        },
+        {
+            "name": "QuitGame",
+            "id": "c5216bab-aaa6-4502-838b-cf76eb911b10",
+            "actions": [
+                {
+                    "name": "QuitGameBtnPressed",
+                    "type": "Button",
+                    "id": "9739b58c-f16d-4aae-8500-bf4151a3284a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "6c7bfe26-1fc2-44d9-a38b-242cf02c0b9f",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "QuitGameBtnPressed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

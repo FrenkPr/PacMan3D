@@ -68,9 +68,24 @@ public class InputsController : Singleton<InputsController>
         p.Disable();
     }
 
+    private void QuitGame()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+
+#else
+            Application.Quit();
+#endif
+    }
+
     // Update is called once per frame
     void Update()
     {
+        if (Inputs["QuitGameBtnPressed"].triggered)
+        {
+            QuitGame();
+        }
+
         float rotationDir = Inputs["RotationDir"].ReadValue<float>();
 
         if (rotationDir != 0)
